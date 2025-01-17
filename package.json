@@ -12,10 +12,10 @@
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31"
   },
-  "homepage": "https://linkvanyali.github.io/tt-gen-pc-auto"
+  "homepage": "https://linkvanyali.github.io/tt-gen-pc-auto",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build", 
     "preview": "vite preview"
   },
   "devDependencies": {
