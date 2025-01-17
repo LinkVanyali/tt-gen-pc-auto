@@ -91,24 +91,24 @@ function App() {
   };
 
  const generateWeekdays = (start, end) => {
-   const dates = [];
-   const currentDate = new Date(start);
-   const endDate = new Date(end);
-   let currentDayNumber = 1;
-   let currentWeek = [];
-   let weekNumber = 1;
- 
-   // Adjust start date to Monday if it's not already
-   const startDayOfWeek = currentDate.getDay();
-   if (startDayOfWeek !== 1) {
-     if (startDayOfWeek === 0) {
-       currentDate.setDate(currentDate.getDate() + 1);
-     } else {
-       currentDate.setDate(currentDate.getDate() - (startDayOfWeek - 1));
-     }
-   }
+  const dates = [];
+  const currentDate = new Date(start);
+  const endDate = new Date(end);
+  let currentDayNumber = 1;
+  let currentWeek = [];
+  let weekNumber = 1;
 
-    while (currentDate <= endDate) {
+  // Adjust start date to Monday if it's not already
+  const startDayOfWeek = currentDate.getDay();
+  if (startDayOfWeek !== 1) {
+    if (startDayOfWeek === 0) {
+      currentDate.setDate(currentDate.getDate() + 1);
+    } else {
+      currentDate.setDate(currentDate.getDate() - (startDayOfWeek - 1));
+    }
+  }
+
+  while (currentDate <= endDate) {
     if (isWeekday(currentDate)) {
       const dateString = currentDate.toISOString().split('T')[0];
       // Check if we have a predefined day number for this date
