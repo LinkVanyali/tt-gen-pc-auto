@@ -394,7 +394,7 @@ return (
                             {scheduleType}
                           </td>
                           <td className="border border-gray-200 p-2">
-                            <!-- <select
+                           {/*<select
                               value={assignment.dayNumber}
                               onChange={(e) => updateDayNumber(index, parseInt(e.target.value))}
                               className="w-full p-1 border rounded"
@@ -403,7 +403,7 @@ return (
                               {[1, 2, 3, 4, 5, 6, 7].map(day => (
                                 <option key={day} value={day}>Day {day}</option>
                               ))}
-                            </select> -->
+                            </select>*/}
                           </td>
                         </tr>
                       );
